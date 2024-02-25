@@ -31,10 +31,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          sparse-checkout: |
-            .github
-            dist
+      - name: cd into correct location
+        run: echo "cd dist"
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
