@@ -1,5 +1,5 @@
-import { useState } from "react"
-import Navbar from "./Navbar"
+import { useState } from "react";
+import Navbar from "./Navbar";
 import Home from "./pages/home/Home";
 import PersonalProjects from "./pages/personal projects/PersonalProjects";
 import Articles from "./pages/articles/Articles";
