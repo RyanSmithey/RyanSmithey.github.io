@@ -26,6 +26,7 @@ function Articles() {
     newSlideIndex %= articleData.length;
     setCurrentSlide(newSlideIndex);
   }
+  
   const articles = [];
   const buttons = [];
 
@@ -37,8 +38,9 @@ function Articles() {
       </div>
     );
     const temp = i;
+    const bg = i === currentSlide?"bg-black":"bg-white"
     buttons.push(
-      <button onClick={()=>setSlide(temp)} key={`button ${i}`} type="button" className={`w-5 h-5 rounded-full bg-white ${i !== currentSlide || "bg-black"}`} aria-current="true" aria-label={`Slide ${i+1}`}></button>
+      <button onClick={()=>setSlide(temp)} key={`button ${i}`} type="button" className={`w-5 h-5 rounded-full ${bg}`} aria-current="true" aria-label={`Slide ${i+1}`}></button>
     );
     i++;
   }
