@@ -1,35 +1,61 @@
 const historyItems = [
   {
-    time: "time",
-    heading: "heading",
-    content: (<></>)
-  }
+    time: " 2023-Present",
+    heading: "OPEN SOURCE LABS LOGYARD- SOFTWARE ENGINEER",
+    content: `● Created software that collects, parses, stores, and analyzes log data from various sources, such as servers,
+    applications, and cloud environments.
+    ● Remoteproject, focused on fast iteration through strong collaboration.
+    ● Tools used: Typescript, JavaScript,React, Redux, Node, Express, NoSQL(MongoDB, Mongoose), SQL
+    (PostgreSQL), C3, Vite, Webpack, HTML5, CSS, Tailwind, Jest, Supertest, Vitest, Docker, Trello, Cypress, ESLint,
+    Prettier, NPM.`
+  },
+  {
+    time: "2022- 2023",
+    heading: "AGRI SUPPLY- SCANNING COORDINATOR",
+    content: `● Customer support, Inventory management, Sales, Register, Closing, and other required positions.`
+  },
+  {
+    time: "2021- 2022",
+    heading: "SBL PROPERTIES- CONTRACTOR",
+    content: ` ● Evaluated properties for potential remodeling and sale.
+    ● Performed electrical, flooring, HVAC installation, tracked cost and budget.`
+  },
+  {
+    time: " 2018- 2019",
+    heading: " GEHEALTHCARE- PROCESS ENGINEER",
+    content: `● Created software that collects, parses, stores, and analyzes log data from various sources, such as servers,
+    applications, and cloud environments.
+    ● Remoteproject, focused on fast iteration through strong collaboration.
+    ● Tools used: Typescript, JavaScript,React, Redux, Node, Express, NoSQL(MongoDB, Mongoose), SQL
+    (PostgreSQL), C3, Vite, Webpack, HTML5, CSS, Tailwind, Jest, Supertest, Vitest, Docker, Trello, Cypress, ESLint,
+    Prettier, NPM.`
+  },
+  {
+    time: "2017-2021",
+    heading: "FMU Bachelor of Engineering, Major in Industrial Engineering",
+    content: `● Computational physics, data statistics, resource optimization, CAD, Calculus, supply chain design`
+  },
 ]
 
 function WorkHistory() {
-    return (
-      <>
-        <ol className="relative border-s border-gray-700 m-10">               
-          <li className="mb-10 ms-4">
-            <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-            <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">February 2022</time>
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Application UI code in Tailwind CSS</h3>
-            <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.</p>
-          </li>
-          <li className="mb-10 ms-4">
-            <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-            <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">March 2022</time>
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Marketing UI design in Figma</h3>
-            <p className="text-base font-normal text-gray-500 dark:text-gray-400">All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project.</p>
-          </li>
-          <li className="ms-4">
-            <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-            <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">April 2022</time>
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">E-Commerce UI code in Tailwind CSS</h3>
-            <p className="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements built on top of Tailwind CSS.</p>
-          </li>
-        </ol>
-      </>
+  const history = [];
+  for (const historyItem of historyItems){
+    history.push(
+      <li key={historyItem.heading} className="mb-10 ms-4">
+        <div className="absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 border border-gray-900 bg-gray-700"></div>
+        <time className="mb-1 text-sm font-normal leading-none text-gray-500">{historyItem.time}</time>
+        <h3 className="text-lg font-semibold text-white">{historyItem.heading}</h3>
+        <p className="mb-4 text-base font-normal text-gray-400">{historyItem.content}</p>
+      </li>
+    )
+  }
+
+  return (
+    <>
+      <ol className="relative border-s border-gray-700 m-10">               
+        {history}
+      </ol>
+    </>
     )
   }
   

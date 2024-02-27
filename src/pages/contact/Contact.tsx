@@ -4,8 +4,13 @@ function Contact() {
         <section className="bg-gray-900 grow flex">
           <div className="py-16 px-4 mx-auto max-w-screen-md grow">
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-white">Contact</h2>
-            <p className="mb-1 font-light text-center text-gray-400 text-xl">Linkedin Profile Email Phone</p>
-            <p className="mb-1 font-light text-center text-gray-400 text-xl">or send direct message</p>
+            <p className="mb-1 font-light text-center text-gray-400 text-xl">
+              <a href = "https://www.linkedin.com/in/ryan-smithey/">Linkedin: linkedin.com/in/ryan-smithey</a><br></br>
+              <a href = "mailto: RSmithey42@gmail.com">Email: RSmithey42@gmail.com</a><br></br>
+              Phone: 1-843-229-8321<br></br>
+              <a href="Resume Ryan Smithey.pdf" download> Resume Download</a>
+            </p>
+            <p className="mb-1 font-light text-center text-gray-400 text-xl">direct message: </p>
             <form action="#" className="space-y-8">
               <div>
                 <label className="block mb-2 text-sm font-medium text-gray-300">Your email</label>

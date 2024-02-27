@@ -2,21 +2,17 @@ import { useState } from "react";
 
 const articleData = [
   {
-    src: "https://placehold.co/600x400",
-    header: "header",
+    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/72px-LinkedIn_icon.svg.png",
+    header: "Marching Cubes in Unity C#",
     description: "some description"},
   {
-    src: "https://placehold.co/600x400",
-    header: "header",
+    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/WebAssembly_Logo.svg/600px-WebAssembly_Logo.svg.png",
+    header: "WebAssembly Tech Talk",
     description: "some description"},
   {
-    src: "https://placehold.co/600x400",
-    header: "header",
+    src: "https://miro.medium.com/v2/format:webp/1*b3qxB8ELI-kyQKztCsLwEQ.png",
+    header: "The Importance of Logging in Web Applications",
     description: "some description"},
-  {
-    src: "https://placehold.co/600x400",
-    header: "header",
-    description: "some description"}
 ];
 
 function Articles() {
@@ -34,7 +30,7 @@ function Articles() {
   for (const articleDatum of articleData){
     articles.push(
       <div key={`article ${i}`} className={`${i === currentSlide || "hidden"} h-full duration-700 ease-in-out`}>
-        <img src="https://placehold.co/600x400" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"/>
+        <img src={articleDatum.src} className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"/>
       </div>
     );
     const temp = i;
