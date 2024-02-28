@@ -2,17 +2,22 @@ const historyItems = [
   {
     time: " 2023-Present",
     heading: "OPEN SOURCE LABS LOGYARD- SOFTWARE ENGINEER",
-    content: `● Created software that collects, parses, stores, and analyzes log data from various sources, such as servers,
-    applications, and cloud environments.
-    ● Remoteproject, focused on fast iteration through strong collaboration.
+    content: <>
+    ● Created software that collects, parses, stores, and analyzes log data from various sources, such as servers,
+    applications, and cloud environments.<br className="m-1"/>
+    ● Remoteproject, focused on fast iteration through strong collaboration.<br className="m-1"/>
     ● Tools used: Typescript, JavaScript,React, Redux, Node, Express, NoSQL(MongoDB, Mongoose), SQL
     (PostgreSQL), C3, Vite, Webpack, HTML5, CSS, Tailwind, Jest, Supertest, Vitest, Docker, Trello, Cypress, ESLint,
-    Prettier, NPM.`
+    Prettier, NPM.
+    </>
   },
   {
     time: "2022- 2023",
     heading: "AGRI SUPPLY- SCANNING COORDINATOR",
-    content: `● Customer support, Inventory management, Sales, Register, Closing, and other required positions.`
+    content: 
+    <>
+      ● Customer support, Inventory management, Sales, Register, Closing, and other required positions.
+    </>
   },
   {
     time: "2021- 2022",
@@ -23,12 +28,14 @@ const historyItems = [
   {
     time: " 2018- 2019",
     heading: " GEHEALTHCARE- PROCESS ENGINEER",
-    content: `● Created software that collects, parses, stores, and analyzes log data from various sources, such as servers,
-    applications, and cloud environments.
-    ● Remoteproject, focused on fast iteration through strong collaboration.
-    ● Tools used: Typescript, JavaScript,React, Redux, Node, Express, NoSQL(MongoDB, Mongoose), SQL
-    (PostgreSQL), C3, Vite, Webpack, HTML5, CSS, Tailwind, Jest, Supertest, Vitest, Docker, Trello, Cypress, ESLint,
-    Prettier, NPM.`
+    content: 
+    <>
+      ● Created software that collects, parses, stores, and analyzes log data from various sources, such as servers, applications, and cloud environments.<br className="m-1"/>
+      ● Remoteproject, focused on fast iteration through strong collaboration.<br className="m-1"/>
+      ● Tools used: Typescript, JavaScript,React, Redux, Node, Express, NoSQL(MongoDB, Mongoose), SQL
+      (PostgreSQL), C3, Vite, Webpack, HTML5, CSS, Tailwind, Jest, Supertest, Vitest, Docker, Trello, Cypress, ESLint,
+      Prettier, NPM.
+    </>
   },
   {
     time: "2017-2021",
