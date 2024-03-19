@@ -1,4 +1,4 @@
-function HistoryItem({time, heading, content}) {
+function HistoryItem({time, heading, content}: {time: string, heading:string, content: string | JSX.Element}) {
     return (
       <>               
         <li className="mb-10 ms-4">

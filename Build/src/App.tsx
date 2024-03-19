@@ -1,22 +1,21 @@
-import { useState } from "react";
-import Navbar from "./Navbar";
 import Home from "./pages/home/Home";
+import TitleBar from "./pages/utility/TitleBar";
 import PersonalProjects from "./pages/personal projects/PersonalProjects";
-// import Articles from "./pages/articles/Articles";
 import WorkHistory from "./pages/work history/WorkHistory";
 import Contact from "./pages/contact/Contact";
 
 function App() {
-  const [currentPage, setCurrentPage] = useState('Home');
-
   return (
     <>
-      <Navbar currentPage={currentPage} setCurrentPage={setCurrentPage} options={["Home", "Personal Projects", "Work History", "Contact"]}/>
-      {currentPage !== 'Home' || <Home/>}
-      {currentPage !== 'Personal Projects' || <PersonalProjects/>}
-      {/* {currentPage !== 'Articles' || <Articles/>} */}
-      {currentPage !== 'Work History' || <WorkHistory/>}
-      {currentPage !== 'Contact' || <Contact/>}
+      <div className="px-10">
+        <Home className="mt-10"/>
+        <TitleBar Text="Projects" className="mt-6"/>
+        <PersonalProjects className="mt-3"/>
+        <TitleBar Text="Work History" className="mt-6"/>
+        <WorkHistory className="mt-3"/>
+        <TitleBar Text="Contact" className="mt-6"/>
+        <Contact className="mt-3 mb-10"/>
+      </div>
     </>
   )
 }

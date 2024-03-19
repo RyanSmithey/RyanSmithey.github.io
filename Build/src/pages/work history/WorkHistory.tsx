@@ -1,4 +1,4 @@
-const historyItems = [
+const historyItems: {time: string, heading:string, content:string | JSX.Element}[] = [
   {
     time: " 2023-Present",
     heading: "OPEN SOURCE LABS LOGYARD- SOFTWARE ENGINEER",
@@ -30,11 +30,7 @@ const historyItems = [
     heading: " GEHEALTHCARE- PROCESS ENGINEER",
     content: 
     <>
-      ● Created software that collects, parses, stores, and analyzes log data from various sources, such as servers, applications, and cloud environments.<br className="m-1"/>
-      ● Remoteproject, focused on fast iteration through strong collaboration.<br className="m-1"/>
-      ● Tools used: Typescript, JavaScript,React, Redux, Node, Express, NoSQL(MongoDB, Mongoose), SQL
-      (PostgreSQL), C3, Vite, Webpack, HTML5, CSS, Tailwind, Jest, Supertest, Vitest, Docker, Trello, Cypress, ESLint,
-      Prettier, NPM.
+      
     </>
   },
   {
@@ -44,7 +40,7 @@ const historyItems = [
   },
 ]
 
-function WorkHistory() {
+function WorkHistory({className}) {
   const history = [];
   for (const historyItem of historyItems){
     history.push(
@@ -59,7 +55,7 @@ function WorkHistory() {
 
   return (
     <>
-      <ol className="relative border-s border-gray-700 m-10">               
+      <ol className={`relative border-s border-gray-700 mx-10 ${className}`}>               
         {history}
       </ol>
     </>

@@ -1,9 +1,8 @@
-function Contact() {
+function Contact({className}: { className: string }) {
     return (
       <>
-        <section className="bg-gray-900 grow flex">
-          <div className="py-16 px-4 mx-auto max-w-screen-md grow">
-            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-white">Contact</h2>
+        <section className={`bg-gray-900 grow flex ${className}`}>
+          <div className="px-4 mx-auto max-w-screen-md grow">
             <p className="mb-1 font-light text-center text-gray-400 text-xl">
               <a href = "https://www.linkedin.com/in/ryan-smithey/">Linkedin: linkedin.com/in/ryan-smithey</a><br></br>
               <a href = "mailto: RSmithey42@gmail.com">Email: RSmithey42@gmail.com</a><br></br>
@@ -13,7 +12,7 @@ function Contact() {
             <form action="https://formspree.io/f/xpzvrjln" method="POST" className="space-y-8">
               <div>
                 <label className="block mb-2 text-sm font-medium text-gray-300">Your email</label>
-                <input type="email" name="_replyto" id="email" className="border text-sm rounded-lg block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500 shadow-sm-light" placeholder="name@flowbite.com" required/>
+                <input type="email" name="_replyto" id="email" className="border text-sm rounded-lg block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500 shadow-sm-light" placeholder="Email Address" required/>
               </div>
               <div>
                 <label className="block mb-2 text-sm font-medium text-gray-300">Subject</label>
